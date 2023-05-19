@@ -1,0 +1,81 @@
+Брейкпоинты митосайта: (360px), (440px), 576px, 768px, ((880px)), 992px, (1000px/1024px), 1200px, (1300px/1360px/1400px), 1921px.
+
+http://192.168.0.5:8080/
+cd ../promenadpodomam.ru  gamebeat.studio  startupcentre.ru  kirshmelev.ru  optimalist.su  sushi  plaksin.net  lunkov-psy.ru  ipbro.ru mitorun.studio
+
+npm start [запуск Eleventy: npx @11ty/eleventy --serve --quiet]
+npx stylelint "mitorun.studio/src/**/*.css" --fix
+npx yaspeller --only-errors --ignore-digits --find-repeat-words --file-extensions ".html,.md,.njk,.txt,.css" ./mitorun.studio/src/
+npx yaspeller https://mitorun.studio/
+npx node-w3c-validator --input mitorun.studio/site/**/*.html --format lint --verbose --errors-only
+npx htmlhint "mitorun.studio/site/**/*.html"
+npx bem-validate mitorun.studio/site/index.html
+cat gang-of-three.ttf | ttf2woff2 > gang-of-three.woff2
+node sharp
+
+npm install --save-dev @11ty/eleventy html-minifier-terser @11ty/eleventy-plugin-bundle @11ty/eleventy-navigation @11tyrocks/eleventy-plugin-lightningcss typograf esbuild
+
+@media (min-width: 576px) and (max-width: 767.98px) { ... }
+<img loading="lazy" fetchpriority="high" width="300" height="150" src="https://picsum.photos/300/150?random=1" alt="" onerror="this.onerror=null; this.src='/img/thumb.jpg'">
+<a class="link" target="_blank" rel="noopener" href="https://example.com/"></a>
+<svg xmlns="http://www.w3.org/2000/svg" width="1440" height="900" viewBox="0 0 1440 900" fill="none" stroke="#000" stroke-width=".8" stroke-linecap="round | square" stroke-linejoin="round" preserveAspectRatio="none" fill-rule="evenodd" clip-rule="evenodd" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true"></svg>
+<div style="height: 100vh;"></div>
+<meta name="robots" content="noindex, nofollow" data-helmet>
+
+<abbr title="Союз советских социалистических республик">СССР</abbr> – Аббревиатура и её расшифровка в тайтле.
+<address>mail@example.com</address> – контактная информация автора данной статьи (внутри article) или страницы (внутри body).
+<article>...</article> – Независимый информационный раздел (карточка превью статьи, статья, сообщение, комментарий).
+<aside>…</aside> – Раздел, который не имеет прямого отношения к главному содержимому страницы main. В блогпосте aside можно расположить вне main и вставить туда карточки "Еще статьи".
+<blockquote cite="https://example.com/">Цитата</blockquote> – Блок (абзац) с цитатой.
+<cite>Название</cite> – Название творческой работы, произведения.
+<dfn title="описание термина">термин</dfn> – Описание нового термина при его первом упоминании в тексте.
+<em>текст</em> – Выделение текста на который нужно сделать акцент, который имеет особое значение.
+<figure><figcaption>Текст</figcaption></figure> – картинка с подписью.
+<kbd>текст</kbd> – Обозначение клавиш или текста, набранного на клавиатуре.
+<q>текст</q> – Цитата в тексте.
+<s>текст</s> – Перечёркнутый (не точный, не актуальный) текст.
+<samp>текст</samp> – Результат вывода текста или скрипта программы.
+<small>текст</small> – Сопроводительная информация "мелким текстом".
+<strong>текст</strong> – Выделяет важный текст, с большим значением.
+<time datetime="2021-06-26">2021.06.26</time> – Дата и время.
+<u>текст</u> – Выделение текста подчёркиванием.
+<var>текст</var> – Переменная из программы.
+
+Это пример [ссылки](https://example.com) в тексте.
+![alt картинки](/img/image.png)
+
+– — $ € ₽ © ® ™ … × ÷ ± ≈ ≠ ° № ∞ § π µ Ø ¦ | ‾
+← ↑ → ↓ ↖ ↗ ↘ ↙ ¶ « » ≡ ✕ ∟ ∧ ∨ • ○ ·
+(–) тире узкое-en &ndash; &#8211;
+(—) тире широкое-em &mdash; &#8212;
+(‑) неразрывное тире &#8209;
+( ) неразрывный (дополнительный) пробел &nbsp; &#160;
+( ) узкий пробел (еn-шириной в букву n) &ensp; &#8194;
+( ) широкий пробел (em-шириной в букву m) &emsp; &#8195;
+() мягкий перенос &shy; &#173;
+(а́) ударение (ставится после "ударной" буквы) &#769;
+("") кавычки двойные универсальные &#34; или &quot;
+(``) обратные(?) кавычки
+(’) апостроф (второй вариант) для слов в YAML U+2019
+(<>) кавычки меньше-больше &lt; tag &gt;
+
+https://picsum.photos/seed/picsum/300/200 - не меняющаяся фотка
+https://picsum.photos/300/200?grayscale - черно-белая фотка
+https://picsum.photos/300/200/?blur=2 - размытая фотка
+https://picsum.photos/300/200.webp - определенный формат файла
+https://picsum.photos/300/200?random=1
+https://picsum.photos/300/200?random=2 - различающиеся фотки
+
+https://mitorun.studio/web/grid/#:~:text=Ссылка на текст сайта
+Поиск по сайту: config site:11ty.dev
+
+https://realfavicongenerator.net/
+
+/*------------------------------------------------
+---------- Страница Портфолио: -------------------
+------------------------------------------------*/
+
+БЭМ:
+class="form | form-2" – Блоки.
+class="form__title | form-2__label-primary" – Элементы.
+class="form__title--small | form-2__label-primary--alert" – Модификаторы.

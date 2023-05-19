@@ -1,0 +1,1091 @@
+{
+	// Файл с кастомными сниппетами для VSCode (дополняют emmet).
+	// Место расположения файла: C:\Users\MITO-PC\AppData\Roaming\Code\User\snippets\mitorun.code-snippets
+
+	//----------------------------------------------------
+	//----- CSS: -----------------------------------------
+	//----------------------------------------------------
+
+	"color в CSS": {
+		"scope": "css,sass,scss",
+		"prefix": "c",
+		"body": [
+			"color: $0;",
+		],
+	},
+
+
+	"var(--) в CSS": {
+		"scope": "css,sass,scss",
+		"prefix": "v",
+		"body": [
+			"var(--$0)",
+		],
+	},
+
+
+	"@media": {
+		"scope": "css,sass,scss",
+		"prefix": "med",
+		"body": [
+			"@media (min-width: ${1:576}px) {$0}",
+		],
+	},
+
+
+	"@media полное": {
+		"scope": "css,sass,scss",
+		"prefix": "medx",
+		"body": [
+			"@media (min-width: 576px) and (max-width: 767.98px) {$0}",
+		],
+	},
+
+
+	"@keyframes": {
+		"scope": "css,sass,scss",
+		"prefix": "key",
+		"body": [
+			"@keyframes animationName {",
+			"\t0% {$0}",
+			"\t100% {$0}",
+			"}",
+		],
+	},
+
+
+	"animation": {
+		"scope": "css,sass,scss",
+		"prefix": "a",
+		"body": [
+			"animation: animationName 1s linear;",
+		],
+	},
+
+
+	"animation full": {
+		"scope": "css,sass,scss",
+		"prefix": "ax",
+		"body": [
+			"animation: animationName 1s linear infinite;",
+		],
+	},
+
+
+	"::before": {
+		"scope": "css,sass,scss",
+		"prefix": "::b",
+		"body": [
+			"::before ",
+		],
+	},
+
+
+	"content у псевдоэлементов": {
+		"scope": "css,sass,scss",
+		"prefix": "con",
+		"body": [
+			"content: '';",
+		],
+	},
+
+
+	"font": {
+		"scope": "css,sass,scss",
+		"prefix": "f",
+		"body": [
+			"font: $0;",
+		],
+	},
+
+
+	"font-weight": {
+		"scope": "css,sass,scss",
+		"prefix": "fw",
+		"body": [
+			"font-weight: var(--font-weight-xl);",
+		],
+	},
+
+
+	"font-size": {
+		"scope": "css,sass,scss",
+		"prefix": "fz",
+		"body": [
+			"font-size: var(--font-size-l);",
+		],
+	},
+
+
+	"font-size heading bootstrap": {
+		"scope": "css,sass,scss",
+		"prefix": "fzx",
+		"body": [
+			"font-size: clamp(26px, calc(22px + 1.5vw), 40px);",
+			"font-size: clamp(24px, calc(21.2px + 0.9vw), 32px);",
+			"font-size: clamp(22px, calc(20.8px + 0.6vw), 28px);",
+			"font-size: clamp(20px, calc(20.4px + 0.3vw), 24px);",
+		],
+	},
+
+
+	"height full-page": {
+		"scope": "css,sass,scss",
+		"prefix": "hfp",
+		"body": [
+			"height: clamp(600px, 100vh, 1080px);",
+		],
+	},
+
+
+	"line-height": {
+		"scope": "css,sass,scss",
+		"prefix": "lh",
+		"body": [
+			"line-height: var(--line-height-s);",
+		],
+	},
+
+
+	"transition": {
+		"scope": "css,sass,scss",
+		"prefix": "t",
+		"body": [
+			"transition: 0.2s linear;",
+		],
+	},
+
+
+	"transform": {
+		"scope": "css,sass,scss",
+		"prefix": "tr",
+		"body": [
+			"transform: translate(2px, 2px) scale(0.8);",
+		],
+	},
+
+
+	"transition full": {
+		"scope": "css,sass,scss",
+		"prefix": "tx",
+		"body": [
+			"transition: margin 0.8s ease-in-out, color 0.5s 0.3s linear;",
+		],
+	},
+
+
+	"background-color": {
+		"scope": "css,sass,scss",
+		"prefix": "bgc",
+		"body": [
+			"background-color: $0;",
+		],
+	},
+
+
+	"background full": {
+		"scope": "css,sass,scss",
+		"prefix": "bg",
+		"body": [
+			"background: content-box url('/img/sprite.svg#$1') 50% / contain no-repeat lightgrey;",
+		],
+	},
+
+
+	"background full multi": {
+		"scope": "css,sass,scss",
+		"prefix": "bgx",
+		"body": [
+			"background-clip: content-box | padding-box | text;",
+			"background-image: url('/img/sprite.svg#');",
+			"background-position: 50% 20px;",
+			"background-size: contain | cover | 100% 100%;",
+			"background-repeat: no-repeat;",
+			"background-color: grey;",
+			"background-attachment: fixed;",
+			"background-origin: content-box | padding-box;$0",
+		],
+	},
+
+
+	"background-image": {
+		"scope": "css,sass,scss",
+		"prefix": "bgi",
+		"body": [
+			"background-image: url('/img/${1}.png');",
+		],
+	},
+
+
+	"background image-set": {
+		"scope": "css,sass,scss",
+		"prefix": "bgis",
+		"body": [
+			"background-image: image-set(url('/img/${1}.webp') type=('image/webp'), url('/img/${1:picture}.jpg'));$0",
+			//"background-image: image-set(\"img/${1}.webp\" type=(\"image/webp\"), \"img/${1:picture}.jpg\" type=(\"image/jpg\"));$0",
+		],
+	},
+
+
+	"border-radius": {
+		"scope": "css,sass,scss",
+		"prefix": "br",
+		"body": [
+			"border-radius: var(--border-radius-m);$0",
+		],
+	},
+
+
+	"box-shadow": {
+		"scope": "css,sass,scss",
+		"prefix": "bs",
+		"body": [
+			"box-shadow: 0 2px 12px 0 hsla(0, 0%, 0%, 0.2);",
+		],
+	},
+
+
+	"font-family": {
+		"scope": "css,sass,scss",
+		"prefix": "ff",
+		"body": [
+			"font-family: var(--font-family-heading);",
+		],
+	},
+
+
+	"text-shadow": {
+		"scope": "css,sass,scss",
+		"prefix": "ts",
+		"body": [
+			"text-shadow: 0 2px 12px hsla(0, 0%, 0%, 0.2);",
+		],
+	},
+
+
+	"grid-template-columns": {
+		"scope": "css,sass,scss",
+		"prefix": "gtc",
+		"body": [
+			"grid-template-columns: $0;",
+		],
+	},
+
+
+	"grid-template-columns: repeat": {
+		"scope": "css,sass,scss",
+		"prefix": "gtcr",
+		"body": [
+			"grid-template-columns: repeat(auto-fit, minmax(292px, 1fr));$0",
+		],
+	},
+
+
+	"place-content: center": {
+		"scope": "css,sass,scss",
+		"prefix": "pcc",
+		"body": [
+			"place-content: center;$0",
+		],
+	},
+
+
+	"place-items: center": {
+		"scope": "css,sass,scss",
+		"prefix": "pic",
+		"body": [
+			"place-items: center;$0",
+		],
+	},
+
+
+	"gap": {
+		"scope": "css,sass,scss",
+		"prefix": "g",
+		"body": [
+			"gap: var(--margin-s);",
+		],
+	},
+
+
+	"Grid с поведением как Flex": {
+		"scope": "css,sass,scss",
+		"prefix": "gridf",
+		"body": [
+			"display: grid;",
+			"grid-template-columns: auto;",
+			"grid-auto-columns: auto;",
+			"grid-auto-flow: column;",
+			"gap: var(--margin-s);$0",
+		],
+	},
+
+
+	"clamp функция для резинового адаптива": {
+		"scope": "css,sass,scss",
+		"prefix": "clamp",
+		"body": [
+			"clamp(26px, calc(22px + 1.5vw), 40px);",
+		],
+	},
+
+
+	"Фильтры все": {
+		"scope": "css,sass,scss",
+		"prefix": "filter",
+		"body": [
+			"filter: blur(5px);",
+			"filter: brightness(0.4);",
+			"filter: contrast(200%);",
+			"filter: drop-shadow(16px 16px 20px blue) drop-shadow(3px 3px red);",
+			"filter: grayscale(50%);",
+			"filter: hue-rotate(90deg);",
+			"filter: invert(75%);",
+			"filter: opacity(25%);",
+			"filter: saturate(30%);",
+			"filter: sepia(60%);",
+			"filter: url('sprite.svg#noise');",
+		],
+	},
+
+
+	"Фильтры для фона все": {
+		"scope": "css,sass,scss",
+		"prefix": "bfilter",
+		"body": [
+			"backdrop-filter: blur(5px);",
+			"backdrop-filter: brightness(0.4);",
+			"backdrop-filter: contrast(2);",
+			"backdrop-filter: drop-shadow(16px 16px 20px blue) drop-shadow(3px 3px red);",
+			"backdrop-filter: grayscale(0.5);",
+			"backdrop-filter: hue-rotate(90deg);",
+			"backdrop-filter: invert(75%);",
+			"backdrop-filter: opacity(25%);",
+			"backdrop-filter: saturate(30%);",
+			"backdrop-filter: sepia(0.6);",
+			"backdrop-filter: url('sprite.svg#noise');",
+		],
+	},
+
+
+	"mask": {
+		"scope": "css,sass,scss",
+		"prefix": "mask",
+		"body": [
+			"/*mask: url('/img/sprite.svg#arrow') center / contain no-repeat;*/",
+			"-webkit-mask-image: url('/img/sprite.svg#arrow');",
+			"mask-image: url('/img/sprite.svg#arrow');",
+			"-webkit-mask-position: center;",
+			"mask-position: center;",
+			"-webkit-mask-repeat: no-repeat;",
+			"mask-repeat: no-repeat;",
+			"-webkit-mask-size: contain;",
+			"mask-size: contain;",
+			"background-color: var(--color);",
+		],
+	},
+
+
+	"mask full multi": {
+		"scope": "css,sass,scss",
+		"prefix": "maskx",
+		"body": [
+			"mask-clip: content-box | padding-box | border-box | margin-box | fill-box | stroke-box | view-box;",
+			"mask-composite: add | subtract | intersect | exclude;",
+			"mask-image: url('/img/sprite.svg#arrow'), linear-gradient(#000, transparent);",
+			"mask-mode: alpha | luminance | match-source;",
+			"mask-origin: content-box | padding-box | border-box | margin-box | fill-box | stroke-box | view-box;",
+			"mask-position: top | bottom | left | right | center;",
+			"mask-repeat: repeat | repeat-x | repeat-y | space | round | no-repeat;",
+			"mask-size: cover | contain | 50% | 12px auto;",
+		],
+	},
+
+
+	"Градиентный текст": {
+		"scope": "css,sass,scss",
+		"prefix": "text-gradient",
+		"body": [
+			"background-clip: text;",
+			"-webkit-background-clip: text;",
+			"text-fill-color: transparent;",
+			"-webkit-text-fill-color: transparent;",
+			"background-image: var(--gradient);",
+		],
+	},
+
+
+	"Обрезание строк в 3 точки line-clamp": {
+		"scope": "css,sass,scss",
+		"prefix": "line-clamp",
+		"body": [
+			"display: -webkit-box;",
+			"max-height: calc(2em * var(--line-height-m));",
+			"-webkit-box-orient: vertical;",
+			"-webkit-line-clamp: 2;",
+			"line-height: var(--line-height-m);",
+			"overflow: hidden;",
+		],
+	},
+
+
+	"Закрыть фоном иконку сломанной картинки": {
+		"scope": "css,sass,scss",
+		"prefix": "imgalt",
+		"body": [
+			"line-height: var(--line-height-m);",
+			"img::before {",
+			"\tcontent: attr(alt);",
+			"\tposition: absolute;",
+			"\tleft: 0;",
+			"\ttop: -10px;",
+			"\tdisplay: block;",
+			"\twidth: 100%;",
+			"\tpadding: 10px;",
+			"\tbackground: var(--bg);",
+			"\tcolor: transparent;",
+			"}",
+		],
+	},
+
+
+	"social CSS": {
+		"scope": "css,sass,scss",
+		"prefix": "social",
+		"body": [
+			".social {",
+			"\tdisplay: grid;",
+			"\tgrid-template-columns: auto;",
+			"\tgrid-auto-columns: auto;",
+			"\tgrid-auto-flow: column;",
+			"\tgap: var(--margin-s);",
+			"\tjustify-content: start;",
+			"}",
+			"",
+			".social__link {",
+			"\tdisplay: block;",
+			"\twidth: 48px;",
+			"\theight: 48px;",
+			"\tbackground-position: 50%;",
+			"\tbackground-size: 26px;",
+			"\tbackground-repeat: no-repeat;",
+			"\tbackground-color: var(--grey-lightest);",
+			"\tborder-radius: 99px;",
+			"\t/*transition: background-color 0.3s linear, color 0.3s linear;*/",
+			"}",
+			"",
+			".social__link.telegram {",
+			"\tbackground-image: url('/img/sprite.svg#telegram');",
+			"}",
+		],
+	},
+
+
+	"@media (prefers-reduced-motion": {
+		"scope": "css,sass,scss",
+		"prefix": "reduce",
+		"body": [
+			"@media (prefers-reduced-motion: no-preference) {$1}$0",
+		],
+	},
+
+
+	"container": {
+		"scope": "css,sass,scss",
+		"prefix": ".c",
+		"body": [
+			".container {",
+			"\tpadding-left: max(calc(50% - 1200px / 2), var(--container-padding, 14px));",
+			"\tpadding-right: max(calc(50% - 1200px / 2), var(--container-padding, 14px));",
+			"}",
+		],
+		"description": "Контейнер новый паддингом."
+	},
+
+
+	"Visually hidden": {
+		"scope": "css,sass,scss",
+		"prefix": "vh",
+		"body": [
+			".vh {",
+			"\tposition: absolute;",
+			"\twidth: 1px;",
+			"\theight: 1px;",
+			"\tmargin: -1px;",
+			"\tpadding: 0;",
+			"\toverflow: hidden;",
+			"\twhite-space: nowrap;",
+			"\tborder: 0;",
+			"\tappearance: none;",
+			"\tclip: rect(0 0 0 0);",
+			"\tclip-path: inset(100%);",
+			"}"
+		],
+		"description": "Спец. класс для скрытия элементов, доступных для скринридера."
+	},
+
+
+	"Дебаг переполнения элементов": {
+		"scope": "css,sass,scss",
+		"prefix": "debug",
+		"body": [
+			"outline: 2px solid hsla(0, 100%, 50%, 0.5) !important;",
+			"outline-offset: 0 !important;/* это для тестирования границ элементов (переполнение) */",
+		],
+	},
+
+
+	"Тестирование сетки": {
+		"scope": "css,sass,scss",
+		"prefix": "test",
+		"body": [
+			"background: content-box hsla(28, 100%, 60%, 0.1) !important;",
+			"outline: 1px dashed hsla(28, 100%, 60%, 0.5) !important;",
+			"outline-offset: 0 !important;/* это для тестирования сеток */",
+		],
+	},
+
+
+	"Заголовок раздела комментарием CSS": {
+		"scope": "css,sass,scss",
+		"prefix": "com",
+		"body": [
+			"/*------------------------------------------------",
+			"---------- Страница Блог: ------------------------",
+			"------------------------------------------------*/",
+		],
+	},
+
+
+	"Заголовок раздела комментарием JS": {
+		"scope": "js,json",
+		"prefix": "comx",
+		"body": [
+			"//------------------------------------------------",
+			"//-------- Шаблон заголовка: ---------------------",
+			"//------------------------------------------------",
+		],
+	},
+
+
+	"Заголовок раздела комментарием HTML": {
+		"scope": "html,njk",
+		"prefix": "com",
+		"body": [
+			"<!------------------------------------------------",
+			"---------- Шаблон заголовка: ---------------------",
+			"------------------------------------------------->",
+		],
+	},
+
+
+	//----------------------------------------------------
+	//----- HTML: ----------------------------------------
+	//----------------------------------------------------
+
+	"Класс": {
+		"scope": "html,njk",
+		"prefix": "c",
+		"body": [
+			"class=\"$1\"",
+		],
+	},
+
+
+	"Ссылка для телефона": {
+		"scope": "html,njk",
+		"prefix": "at",
+		"body": [
+			"<a class=\"link\" href=\"tel:+71234567890\">+7${1:1234567890}</a>$0",
+		],
+	},
+
+
+	"Ссылка для почты": {
+		"scope": "html,njk",
+		"prefix": "am",
+		"body": [
+			"<a class=\"link\" href=\"mailto:$1\">${1:hi@example.com}</a>$0",
+		],
+	},
+
+
+	"Ссылка полная": {
+		"scope": "html,njk",
+		"prefix": "ax",
+		"body": [
+			"<a class=\"link\" target=\"_blank\" rel=\"noopener\" href=\"https://example.com/\">$1</a>$0",
+		],
+	},
+
+
+	"Картинка базовая": {
+		"scope": "html,njk",
+		"prefix": "img",
+		"body": [
+			"<img width=\"300\" height=\"150\" src=\"/img/example.jpg\" alt=\"\">",
+		],
+	},
+
+
+	"Картинка полная": {
+		"scope": "html,njk",
+		"prefix": "imgx",
+		"body": [
+			"<img loading=\"lazy\" fetchpriority=\"high\" width=\"300\" height=\"150\" src=\"/img/example.jpg\" alt=\"\">",
+		],
+	},
+
+
+	"picture базовая": {
+		"scope": "html,njk",
+		"prefix": "pic",
+		"body": [
+			"<picture class=\"blog-card-img\">",
+			"\t<source type=\"image/avif\" srcset=\"img/$1.avif\">",
+			"\t<source type=\"image/webp\" srcset=\"img/$1.webp\">",
+			"\t<img width=\"600\" height=\"600\" src=\"img/${1:image}.jpeg\" alt=\"$2\">",
+			"</picture>$0",
+		],
+		"description": "picture базовая"
+	},
+
+
+	"SVG спрайт в HTML": {
+		"scope": "html,njk",
+		"prefix": "svgu",
+		"body": [
+			"<svg aria-hidden=\"true\">",
+			"\t<use href=\"/img/sprite.svg#$1\"></use>",
+			"</svg>",
+		],
+	},
+
+
+	"SVG full": {
+		"scope": "html,,njk,css,sass,scss,txt,js,typescript",
+		"prefix": "svgx",
+		"body": [
+			"<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"96\" height=\"96\" viewBox=\"0 0 96 96\" fill=\"none\" stroke=\"#000\" stroke-width=\".8\" stroke-linecap=\"round | square\" stroke-linejoin=\"round\" preserveAspectRatio=\"none\" xmlns:xlink=\"http://www.w3.org/1999/xlink\" aria-hidden=\"true\">",
+			"\t<path d=\"M1 1L7 7M7 1L1 7\"/>",
+			"\t<circle />",
+			"\t<rect />",
+			"</svg>",
+		],
+	},
+
+
+	"SVG атрибут xmlns": {
+		"scope": "html,svg,njk,css,sass,scss,js,typescript",
+		"prefix": "xmlns",
+		"body": [
+			"xmlns=\"http://www.w3.org/2000/svg\"",
+		],
+	},
+
+
+	"div на всю высоту": {
+		"scope": "html,njk",
+		"prefix": "divx",
+		"body": [
+			"<div style=\"height: 100vh;\"></div>",
+		],
+	},
+
+
+	"meta-тег robots-none": {
+		"scope": "html,njk",
+		"prefix": "noindex",
+		"body": [
+			"<meta name=\"robots\" content=\"noindex, nofollow\">",
+		],
+	},
+
+
+	"meta-тег link-preload": {
+		"scope": "html,njk",
+		"prefix": "preload",
+		"body": [
+			"<link rel=\"preload\" as=\"image | font\" href=\"img/sprite.svg\">",
+		],
+	},
+
+
+	"video": {
+		"scope": "html,njk",
+		"prefix": "video",
+		"body": [
+			"<video src=\"/fls/video.webm\" width=\"300\" controls></video>",
+		],
+	},
+
+
+	"video полное": {
+		"scope": "html,njk",
+		"prefix": "videox",
+		"body": [
+			"<video poster=\"/img/fls/video.jpg\" controls width=\"250\" height=\"auto\" autoplay muted loop>",
+			"\t<source src=\"/fls/video.webm\" type=\"video/webm\">",
+			"\t<source src=\"/fls/video.mp4\" type=\"video/mp4\">",
+			"\t<p>Ваш браузер не поддерживает встроенные видео, можете <a href=\"/fls/video.mp4\">скачать это видео</a>.</p>",
+			"</video>",
+		],
+	},
+
+
+	"Таблица базовая": {
+		"scope": "html,njk",
+		"prefix": "tbl",
+		"body": [
+			"<table class=\"table\">",
+			"\t<tr>",
+			"\t\t<td>",
+			"\t\t\t$0",
+			"\t\t</td>",
+			"\t</tr>",
+			"</table>",
+		],
+	},
+
+
+	"Codefield": {
+		"scope": "html,njk,md",
+		"prefix": "codefield",
+		"body": [
+			"<pre class=\"codefield language-html\"><code class=\"codefield__code\"></code></pre>",
+		],
+	},
+
+
+	"Заготовка под раздел": {
+		"scope": "html,njk,md",
+		"prefix": "section",
+		"body": [
+			"<!-- Раздел: -->",
+			"<section class=\"container\">",
+			"\t<h2 class=\"h2\"></h2>",
+			"",
+			"</section>",
+		],
+	},
+
+
+	"Email: Таблица базовая": {
+		"scope": "html,njk",
+		"prefix": "emailtable",
+		"body": [
+			"<table align=\"center\" border=\"0\" cellspacing=\"0\" cellpadding=\"0\" role=\"presentation\" style=\"width: 100%; max-width: 600px; Margin: 0; padding: 0; font-family: 'Poppins', sans-serif, Arial, Helvetica; color: #000000; background-color: #ffffff;\">",
+			"\t<tr>",
+			"\t\t<td>",
+			"\t\t\t$0",
+			"\t\t</td>",
+			"\t</tr>",
+			"</table>",
+		],
+		"description": "Вёрстка писем табличная"
+	},
+
+
+	"Email: Кнопка": {
+		"scope": "html,njk",
+		"prefix": "emailbutton",
+		"body": [
+			"<table align=\"center\" border=\"0\" cellspacing=\"0\" cellpadding=\"0\" role=\"presentation\">",
+			"\t<tr>",
+			"\t\t<td style=\"text-align: center; background-color: #4169e1; border-radius: 8px;\">",
+			"\t\t\t<a target=\"_blank\" href=\"https://example.com/\" style=\"display: inline-block; padding: 16px 16px 16px 16px; font-weight: 500; font-size: 16px; line-height: 20px; text-align: center; text-decoration: none; color: #ffffff; background-color: #4169e1; border-radius: 8px;\">&nbsp;&nbsp;&nbsp;КНОПКА&nbsp;&nbsp;&nbsp;</a>",
+			"\t\t</td>",
+			"\t</tr>",
+			"</table>$0"
+		],
+		"description": "Вёрстка писем табличная. Создание обычной кнопки."
+	},
+
+
+	"Метатеги OpenGraph": {
+		"scope": "html,njk",
+		"prefix": "og",
+		"body": [
+			"<meta property=\"og:type\" content=\"website\">",
+			"<meta property=\"og:title\" content=\"Заголовок\">",
+			"<meta property=\"og:description\" content=\"Описание\">",
+			"<meta property=\"og:site_name\" content=\"Example Com\">",
+			"<meta property=\"og:locale\" content=\"ru\">",
+			"<meta property=\"og:image\" content=\"https://example.com/img/og.png\">",
+			"<meta property=\"og:image:alt\" content=\"Логотип и название бренда\">",
+			"<meta property=\"og:url\" content=\"https://example.com/\">"
+		],
+	},
+
+
+	//----------------------------------------------------
+	//----- HTML COMPONENTS: -----------------------------
+	//----------------------------------------------------
+
+	"social": {
+		"scope": "html,njk",
+		"prefix": "social",
+		"body": [
+			"<ul class=\"social\">",
+			"\t<li><a class=\"social__link telegram\" rel=\"noopener\" target=\"_blank\" href=\"#\" title=\"telegram\" aria-label=\"telegram\"></a></li>",
+			"",
+			"\t<li><a class=\"social__link vkontakte\" rel=\"noopener\" target=\"_blank\" href=\"#\" title=\"vkontakte\" aria-label=\"vkontakte\"></a></li>",
+			"",
+			"\t<li><a class=\"social__link instagram\" rel=\"noopener\" target=\"_blank\" href=\"#\" title=\"instagram\" aria-label=\"instagram\"></a></li>",
+			"</ul>"
+		],
+	},
+
+
+	"HTML страница базовая": {
+		"scope": "html,njk",
+		"prefix": "html",
+		"body": [
+			"<!doctype html><!-- Сайт https://example.com/ -->",
+			"<html lang=\"ru\">",
+			"",
+			"<head>",
+			"\t<meta name=\"viewport\" content=\"width=device-width, initial-scale=1\"/>",
+			"\t<meta charset=\"utf-8\"/>",
+			"\t<title>Заголовок</title>",
+			"\t<meta name=\"description\" content=\"Описание\">",
+			"\t<link rel=\"stylesheet\" href=\"/mitorun.css\"/>",
+			"\t<link rel=\"icon\" type=\"image/svg+xml\" sizes=\"any\" href=\"/img/favicon.svg\"/>",
+			"</head>",
+			"",
+			"<body>",
+			"\t<header class=\"header container\">",
+			"\t</header>",
+			"",
+			"\t<main class=\"container\">",
+			"\t</main>",
+			"",
+			"\t<footer class=\"footer container\">",
+			"\t</footer>",
+			"</body>",
+			"</html>",
+		],
+	},
+
+
+	"HTML страница полная": {
+		"scope": "html,njk",
+		"prefix": "htmlx",
+		"body": [
+			"<!doctype html><!-- Сайт https://example.com/ -->",
+			"<html lang=\"ru\" prefix=\"og: https: //ogp.me/ns#\">",
+			"<head>",
+			"\t<meta name=\"viewport\" content=\"width=device-width, initial-scale=1\"/>",
+			"\t<meta charset=\"utf-8\"/>",
+			"\t<title>Заголовок</title>",
+			"\t<meta name=\"description\" content=\"Описание\">",
+			"\t<meta name=\"keywords\" content=\"ключевые, слова\">",
+			"\t<meta name=\"author\" content=\"Oleg Mitorun\">",
+			"",
+			"\t<link rel=\"stylesheet\" href=\"/mitorun.css\"/>",
+			"\t<link rel=\"icon\" sizes=\"any\" href=\"/favicon.ico\">",
+			"\t<link rel=\"icon\" type=\"image/svg+xml\" sizes=\"any\" href=\"/img/favicon.svg\"/>",
+			"\t<link rel=\"apple-touch-icon\" sizes=\"180x180\" href=\"/img/apple-touch-icon.png\">",
+			"\t<link rel=\"manifest\" href=\"/manifest.json\">",
+			"\t<meta name=\"theme-color\" content=\"#ffffff\">",
+			"",
+			"\t<!-- htmlmin:ignore -->",
+			"\t<!-- Yandex.Metrika counter -->",
+			"\t<!--<script type=\"text/javascript\"></script>-->",
+			"\t<!-- /Yandex.Metrika counter -->",
+			"\t<!-- htmlmin:ignore -->",
+			"\t<link rel=\"preload\" as=\"image\" href=\"/img/sprite.svg\">",
+			"\t<link rel=\"preload\" as=\"font\" type=\"font/woff2\" href=\"/fls/font.woff2\">",
+			"\t<script defer src=\"/scripts.js\"></script>",
+			"",
+			"\t<meta property=\"og:type\" content=\"website\">",
+			"\t<meta property=\"og:title\" content=\"Заголовок\">",
+			"\t<meta property=\"og:description\" content=\"Описание\">",
+			"\t<meta property=\"og:site_name\" content=\"Example Com\">",
+			"\t<meta property=\"og:locale\" content=\"ru\">",
+			"\t<meta property=\"og:image\" content=\"https://example.com/img/og.png\">",
+			"\t<meta property=\"og:image:alt\" content=\"Логотип и название бренда\">",
+			"\t<meta property=\"og:url\" content=\"https://example.com/\">",
+			"\t<link rel=\"canonical\" href=\"https://example.com/\">",
+			"</head>",
+			"",
+			"<body>",
+			"\t<header class=\"header container\">",
+			"\t</header>",
+			"",
+			"\t<main class=\"container\">",
+			"\t</main>",
+			"",
+			"\t<footer class=\"footer container\">",
+			"\t</footer>",
+			"\t<noscript>У вас в браузере отключён JavaScript</noscript>",
+			"</body>",
+			"</html>",
+		],
+	},
+
+
+
+
+
+	//----------------------------------------------------
+	//----- JS: ------------------------------------------
+	//----------------------------------------------------
+
+
+	//----------------------------------------------------
+	//----- PHP: -----------------------------------------
+	//----------------------------------------------------
+
+	"PHP tag": {
+		"scope": "php, html",
+		"prefix": "<?",
+		"body": [
+			"<?php the_field('$1'); ?>$0",
+		],
+	},
+
+
+
+
+	//----------------------------------------------------
+	//----- Eleventy: ------------------------------------
+	//----------------------------------------------------
+
+	"Eleventy Variable": {
+		"scope": "html, njk, md",
+		"prefix": "11",
+		"body": [
+			"{{ _site.siteUrl + page.url }}",
+		],
+	},
+
+
+	"Eleventy Include": {
+		"scope": "html, njk, md",
+		"prefix": "11include",
+		"body": [
+			"{% include \"${1:_header.njk}\" %}$0",
+		],
+	},
+
+
+	"Eleventy image Shortcut": {
+		"scope": "html, njk, md",
+		"prefix": "11img",
+		"body": [
+			"{% image \"./src/img/$1\", \"$2\" %}$0",
+		],
+	},
+
+
+	"Eleventy background-image Shortcut": {
+		"scope": "html, njk, md",
+		"prefix": "11bgimg",
+		"body": [
+			"{% bgimage \"./src/img/$1\" %}$0",
+		],
+	},
+
+
+	"Eleventy Front Matter": {
+		"scope": "html, njk, md",
+		"prefix": "11fm",
+		"body": [
+			"---",
+			"title: 'Заголовок'",
+			"description: 'Описание.'",
+			"date: 2022-11-11",
+			"tags: blog",
+			"tags: ['one', 'two']",
+			"permalink: /sitemap.xml",
+			"permalink: false",
+			"layout: _page-base.njk",
+			"layout: false",
+			"eleventyExcludeFromCollections: blog",
+			"eleventyExcludeFromCollections: true",
+			"templateEngineOverride: njk, md",
+			"eleventyNavigation:",
+			"\tparent: Mammals",
+			"\tkey: Humans",
+			"\ttitle: All of the Humans",
+			"\torder: 1",
+			"---",
+		],
+	},
+
+
+	"Eleventy extends": {
+		"scope": "html, njk, md",
+		"prefix": "11extends",
+		"body": [
+			"{% extends \"_page-base.njk\" %}",
+			"",
+			"{% block content %}",
+			"",
+			"<section class=\"container\">",
+			"",
+			"\t{{ content | safe }}",
+			"",
+			"</section>",
+			"",
+			"{% endblock %}",
+		],
+	},
+
+
+	"Eleventy for (цикл Nunjucks)": {
+		"scope": "html, njk, md",
+		"prefix": "11for",
+		"body": [
+			"{%- for blog in collections.all %}{%- endfor %}",
+		],
+	},
+
+
+	"Eleventy if (условие если?)": {
+		"scope": "html, njk, md",
+		"prefix": "11if",
+		"body": [
+			"{%- if page.data.layout %}{%- endif %}",
+		],
+	},
+
+
+	"Eleventy дата": {
+		"scope": "html, njk, md",
+		"prefix": "11time",
+		"body": [
+			"<time datetime=\"{{ date.toISOString().slice(0, 10) }}\">{{ date | readableDate }}</time>",
+		],
+	},
+
+
+	"Eleventy список карточек блога": {
+		"scope": "html, njk, md",
+		"prefix": "11blog",
+		"body": [
+			"<ul class=\"blog\">",
+			"\t<!--{% set blogHome = collections.blog | reverse %}",
+			"\t{% for blog in blogHome.slice(0, 3) %}-->",
+			"\t{% for blog in collections.blog | reverse %}",
+			"\t<li class=\"blog__card\">",
+			"\t\t<img class=\"blog__img\" src=\"/img/blog/{{ blog.page.fileSlug }}.jpg\" alt=\"Обложка статьи {{ blog.data.title }}\">",
+			"",
+			"\t\t<h3 class=\"blog__title h3\">{{ blog.data.title }}</h3>",
+			"",
+			"\t\t<p class=\"blog__tag\">{{ blog.data.blogTag }}</p>",
+			"",
+			"\t\t<div class=\"post__author\">",
+			"\t\t\t<time datetime=\"{{ date.toISOString().slice(0, 10) }}\">{{ blog.data.date | readableDate }}</time>",
+			"",
+			"\t\t\t<address>{{ blog.data.author or 'Олег Миторун'}}</address>",
+			"\t\t</div>",
+			"\t</li>",
+			"\t{% endfor %}",
+			"</ul>",
+		],
+	},
+
+
+}

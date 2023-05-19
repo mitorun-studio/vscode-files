@@ -1,0 +1,301 @@
+{
+	// Файл настроек редактора VSCode.
+	// Место расположения файла: C:\Users\Mitorun\AppData\Roaming\Code\User\settings.json
+	"terminal.integrated.cwd": "C:/MITO-PC/SITES/CODE/startupcentre.ru",
+	"files.autoSaveDelay": 1000,
+	"editor.fontSize": 22,
+	"terminal.integrated.fontSize": 18,
+	"editor.tabSize": 2,
+	"editor.renderWhitespace": "all",
+	"editor.minimap.enabled": false,
+	"editor.mouseWheelZoom": true,
+	"editor.dragAndDrop": false,
+	"editor.wordWrap": "on",
+	"editor.lightbulb.enabled": false,
+	"editor.tabCompletion": "on",
+	"editor.cursorSmoothCaretAnimation": "on",
+	"editor.wordSeparators": "`~!@#$%^&*()-_=+[{]}\\|;:'\",.<>/?",
+	"editor.fontFamily": "Consolas, 'JetBrains Mono', Inconsolata, 'Courier New', monospace",
+	"editor.autoClosingBrackets": "beforeWhitespace",
+	"editor.autoSurround": "never",
+	"editor.bracketPairColorization.enabled": false,
+	"editor.comments.insertSpace": false,
+	"editor.fastScrollSensitivity": 10,
+	"editor.glyphMargin": false,
+	"editor.padding.top": 10,
+	"editor.padding.bottom": 10,
+	"editor.renderLineHighlightOnlyWhenFocus": true,
+	"editor.selectionHighlight": false,
+	"editor.smoothScrolling": true,
+	"editor.cursorBlinking": "expand",
+	"editor.cursorWidth": 3,
+	"editor.fontWeight": 445,
+	"editor.formatOnPaste": true,
+	"editor.suggestFontSize": 16,
+	"editor.suggestLineHeight": 18,
+	"editor.wordBasedSuggestions": false,
+	"editor.insertSpaces": false,
+	"editor.detectIndentation": false,
+	"files.autoSave": "afterDelay",
+	"files.trimFinalNewlines": true,
+	"files.trimTrailingWhitespace": true,
+	"window.autoDetectHighContrast": false,
+	"window.customMenuBarAltFocus": false,
+	"window.enableMenuBarMnemonics": false,
+	"window.title": "${dirty}${activeEditorShort}${separator}${appName}",
+	"workbench.colorTheme": "Default Light+",
+	//"workbench.colorTheme": "MyTheme",
+	//"workbench.startupEditor": "newUntitledFile",
+	//"workbench.editor.closeEmptyGroups": false,
+	//"workbench.tree.renderIndentGuides": "none",
+	"workbench.editor.untitled.hint": "hidden",
+	"workbench.editor.pinnedTabSizing": "compact",
+	"workbench.commandPalette.preserveInput": true,
+	"workbench.enableExperiments": false,
+	"workbench.editor.openPositioning": "last",
+	"workbench.editor.wrapTabs": true,
+	"terminal.integrated.cursorStyle": "line",
+	"terminal.integrated.rightClickBehavior": "default",
+	"terminal.integrated.defaultLocation": "editor",
+	"terminal.integrated.enableBell": true,
+	"terminal.integrated.letterSpacing": 1,
+	"terminal.integrated.lineHeight": 1.2,
+	"terminal.integrated.scrollback": 9000,
+	"terminal.integrated.cursorBlinking": true,
+	"terminal.integrated.cursorWidth": 2,
+	"explorer.compactFolders": false,
+	"explorer.incrementalNaming": "smart",
+	"explorer.copyRelativePathSeparator": "/",
+	"breadcrumbs.icons": false,
+	"zenMode.restore": false,
+	"search.showLineNumbers": true,
+	"extensions.autoUpdate": "onlyEnabledExtensions",
+	"problems.showCurrentInStatus": true,
+	"security.workspace.trust.untrustedFiles": "open",
+	"liveServer.settings.donotShowInfoMsg": true,
+	"gutterpreview.currentColorForSVG": "grey",
+	"html.hover.documentation": false,
+	"html.hover.references": false,
+	//"html.suggest.html5": false,
+	"html.format.wrapLineLength": 0,
+	"[html]": {
+		"editor.defaultFormatter": "vscode.html-language-features"
+	},
+	"css.hover.documentation": false,
+	"css.hover.references": false,
+	"css.lint.duplicateProperties": "warning",
+	"less.hover.references": false,
+	"scss.hover.documentation": false,
+	"scss.hover.references": false,
+	/*"[javascript]": {
+		"editor.defaultFormatter": "vscode.typescript-language-features"
+	},*/
+	"markdown.preview.fontSize": 23,
+	"markdown.preview.lineHeight": 1.5,
+	"telemetry.telemetryLevel": "off",
+	"workbench.startupEditor": "none",
+	"workbench.sash.hoverDelay": 100,
+	"workbench.hover.delay": 300,
+	"editor.hover.delay": 100,
+	"workbench.editorAssociations": {
+		"*.webp": "luna.editor",
+		"*.png": "imagePreview.previewEditor"
+	},
+	"emmet.variables": {
+		"lang": "ru",
+		"charset": "utf-8"
+	},
+	"emmet.includeLanguages": {
+		"njk": "html",
+		"nunjucks": "html"
+	},
+	/* Ниже настройка цветов оболочки VS Code: */
+	"workbench.colorCustomizations": {
+		/* Основные свойства: */
+		/*"foreground": "#000000", цвет текста всей программы */
+		"editor.foreground": "#404040", /* цвет текста редактора 25% */
+		"editor.background": "#F5F5F5", /* цвет фона #F5F5F5 96% */
+		"editorLineNumber.foreground": "#cccccc", /* цвет номеров строк 80% */
+		"editorLineNumber.activeForeground": "#7989af", /* цвет номера активной строки */
+		"editorWhitespace.foreground": "#dedede", /* цвет пробелов и табов 87% */
+		"editorCursor.foreground": "#ff008c", /* цвет курсора hsl(140 100 42) */
+		"editor.lineHighlightBackground": "#ffffca80", /* цвет фона текущей строки */
+		/*"editor.lineHighlightBorder": "#00da742a", цвет рамки текущей строки */
+		"editor.selectionBackground": "#93c8fd", /* цвет выделения текста */
+		"editor.inactiveSelectionBackground": "#d6e3f0", /* цвет выделения текста неактивного окна */
+		"editor.selectionHighlightBackground": "#89d4ff00", /* цвет выделения совпадающего текста (убрал) */
+		"editor.wordHighlightBackground": "#00ffff00", /* цвет слова где курсор, для чтения (убрал) */
+		"editor.wordHighlightStrongBackground": "#00ffff00", /* цвет слова где курсор, для записи (убрал) */
+		"editorBracketMatch.background": "#00ffff00", /* цвет фона текущих скобок (убрал) */
+		"editorBracketMatch.border": "#00ffff00", /* цвет рамки текущих скобок (убрал) */
+		"editorGutter.background": "#ebebeb", /* цвет фона где номера строк 92% */
+		"breadcrumb.background": "#ebebeb", /* цвет фона хлебных крошек 92% */
+		"panel.background": "#e2e7f4", /* цвет фона терминала */
+		"breadcrumb.foreground": "#97a6c9", /* цвет текста хлебных крошек */
+		"editorGroupHeader.tabsBackground": "#cccccc", /* цвет фона панели вкладок 80% */
+		"tab.activeForeground": "#000000",/* цвет текста активной вкладки */
+		"tab.activeBackground": "#ffffff", /* цвет фона активной вкладки */
+		"tab.unfocusedActiveBackground": "#f0f0f0", /* цвет фона активной вкладки не в фокусе 94% */
+		"tab.activeBorder": "#ababab",
+		"tab.activeBorderTop": "#ababab",
+		"tab.inactiveBackground": "#e0e0e0", /* цвет фона неактивных вкладок 88% */
+		"tab.border": "#ababab", /* цвет границ между вкладками 67% */
+		"tab.lastPinnedBorder": "#5c5c5c", /* цвет границы последней закрепленной вкладки 36% */
+		"editorGroup.border": "#ababab", /* цвет рамки между окнами вкладок 67% */
+		"titleBar.activeBackground": "#b8d5f1", /* цвет фона строки меню (или 96%) */
+		"statusBar.background": "#5a8bbd", /* цвет фона строки состояния */
+		"editor.findMatchBorder": "#ff008cef", /* цвет границы текущего результата поиска */
+		"editor.findMatchHighlightBorder": "#ff008c3f", /* цвет границы остальных результатов поиска */
+		"editor.findMatchBackground": "#fffffff5", /* цвет фона результата поиска */
+		"scrollbarSlider.background": "#91bfebb0", /* цвет ползунка скроллбара */
+		"scrollbarSlider.hoverBackground": "#115ea7b0", /* цвет ползунка скроллбара при наведении */
+		"scrollbarSlider.activeBackground": "#043f77b0", /* цвет ползунка скроллбара при нажатии */
+		"editorBracketHighlight.foreground1": "#404040", /* цвет первой пары вложенных скобок 25% */
+		"editorBracketHighlight.foreground2": "#6078ff", /* цвет второй пары вложенных скобок */
+		"editorBracketHighlight.foreground3": "#00d39e", /* цвет третьей пары вложенных скобок */
+		"editorBracketHighlight.foreground4": "#d3eb00", /* цвет четвертой пары вложенных скобок */
+		"editorBracketHighlight.foreground5": "#6ef1df", /* цвет четвертой пары вложенных скобок */
+		/*"editorBracketHighlight.foreground1 editorIndentGuide.background": "#00ffd5", цвет вертикальных направляющих вложенности элементов */
+	},
+	/* Ниже настройка цветов синтаксиса редакторов: */
+	"editor.tokenColorCustomizations": {
+		"comments": "#ababab",/* 67% */
+		"textMateRules": [
+			/*------------- HTML и общее: ----------------*/
+			{
+				"scope": "entity.name.tag, punctuation.definition.tag",
+				"settings": {
+					"foreground": "#c22719",
+					"fontStyle": "bold"
+				}
+			}, /* теги HTML и их скобки */
+			{
+				"scope": "comment, punctuation.definition.comment",
+				"settings": {
+					"foreground": "#ababab"
+				}
+			}, /* комментарии и их скобки 67% */
+			{
+				"scope": "entity.other.attribute-name",
+				"settings": {
+					"foreground": "#0c59a5"
+				}
+			}, /* атрибуты тегов */
+			{
+				"scope": "string.quoted.double.html, string.quoted.single.html",
+				"settings": {
+					"foreground": "#00521f"
+				}
+			}, /* значения атрибутов */
+			/*{"scope": "punctuation.separator.key-value.html",
+				"settings": {"foreground": "#914805"}
+			}, знак равно атрибутов тегов */
+			/*{"scope": "punctuation.definition.string",
+				"settings": {"foreground": "#914805"}
+			}, кавычки атрибутов тегов */
+			/*{"scope": "text.html.derivative",
+				"settings": {"foreground": "#058505"}
+			}, контентный текст */
+			/*{"scope": "meta.attribute.class.html",
+				"settings": {"foreground": "#049104"}
+			}, атрибут class (низкий приоритет, перебивается entity.other.attribute-name) */
+			/*{"scope": "meta.attribute",
+				"settings": {"foreground": "#ff00ea"}
+			}, атрибуты вместе со знаками препинания (низкий приоритет?) */
+			/*------------------ CSS: -------------------*/
+			{
+				"scope": "entity.other.attribute-name.class.css",
+				"settings": {
+					"foreground": "#c26b00",
+					"fontStyle": "bold"
+				}
+			}, /* селекторы класса (или #069606) */
+			{
+				"scope": "entity.other.attribute-name.id.css",
+				"settings": {
+					"foreground": "#c6a800",
+					"fontStyle": "bold"
+				}
+			}, /* селекторы идентификаторов (или #e4ce0e) */
+			{
+				"scope": "entity.other.attribute-name.pseudo-class.css, keyword.operator.combinator.css, entity.other.attribute-name.pseudo-element.css, keyword.control.at-rule, variable.parameter",
+				"settings": {
+					"foreground": "#de367c",
+					"fontStyle": "bold"
+				}
+			}, /* другие элементы в селекторах и @- (или #c20bd3) */
+			/*{"scope": "keyword.operator.combinator.css",
+				"settings": {"foreground": "#e62d9f", "fontStyle": "bold"}
+			}, знаки в селекторах (или #c20bd3) */
+			/*{"scope": "entity.other.attribute-name.pseudo-element.css",
+				"settings": {"foreground": "#e62d9f", "fontStyle": "bold"}
+			}, псевдоэлементы в селекторах (или #c20bd3) */
+			/*{"scope": "punctuation.section.function.begin.bracket.round.css",
+				"settings": {"foreground": "#c20bd3", "fontStyle": "bold"}
+			}, пунктуация в селекторах */
+			/*{"scope": "keyword.control.at-rule",
+				"settings": {"foreground": "#e62d9f", "fontStyle": "bold"}
+			}, @-правила */
+			/*{"scope": "variable.parameter",
+				"settings": {"foreground": "#e62d9f", "fontStyle": "underline"}
+			}, имя у анимации-кейфреймов */
+			{
+				"scope": "support.type.property-name",
+				"settings": {
+					"foreground": "#0c59a5"
+				}
+			}, /* названия свойств */
+			/*{"scope": "punctuation.separator.key-value.css",
+				"settings": {"foreground": "#b47b00"}
+			}, двоеточие в свойствах */
+			/*{"scope": "punctuation.terminator.rule.css",
+				"settings": {"foreground": "#b47b00"}
+			}, точка с запятой в свойствах */
+			/*{"scope": "support.type.vendored.property-name.css",
+				"settings": {"foreground": "#d49815"}
+			}, значения с префиксом */
+			{
+				"scope": "support.constant.property-value.css, meta.function.color.css, support.function, string.quoted.single.css",
+				"settings": {
+					"foreground": "#006025"
+				}
+			}, /* значения свойств */
+			/*{"scope": "meta.function.color.css, support.function",
+				"settings": {"foreground": "#06af14"}
+			}, значения функций типа hsl(), var() */
+			/*{"scope": "string.quoted.single.css",
+				"settings": {"foreground": "#06af14"}
+			}, свойства в одиночных кавычках */
+			{
+				"scope": "constant.numeric, keyword.other.unit",
+				"settings": {
+					"foreground": "#006025"
+				}
+			}, /* числа и их единицы исчисления в значениях свойств */
+			{
+				"scope": "variable, variable.css",
+				"settings": {
+					"foreground": "#7ec200"
+				}
+			}, /* переменные */
+			{
+				"scope": "keyword.operator, meta.embedded",
+				"settings": {
+					"foreground": "#5f5f5f"
+				}
+			}, /* знаки препинания 35% */
+			/*{"scope": "keyword.operator",
+				"settings": {"foreground": "#ff00bf", "fontStyle": "bold italic underline"}
+			}, пример */
+		],
+	},
+	"editor.hover.sticky": false,
+	"less.hover.documentation": false,
+	"livePreview.notifyOnOpenLooseFile": false,
+	"editor.accessibilitySupport": "off",
+	"workbench.activityBar.visible": false,
+	"cssrem.autoRemovePrefixZero": false,
+	"cssrem.currentLine": "disabled",
+	"editor.defaultColorDecorators": true,
+	"cSpell.language": "en,ru",
+}
