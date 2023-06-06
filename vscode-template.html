@@ -1,7 +1,19 @@
 Брейкпоинты митосайта: (360px), (440px), 576px, 768px, ((880px)), 992px, (1000px/1024px), 1200px, (1300px/1360px/1400px), 1921px.
 
-http://192.168.0.5:8080/
-cd ../promenadpodomam.ru  gamebeat.studio  startupcentre.ru  kirshmelev.ru  optimalist.su  sushi  plaksin.net  lunkov-psy.ru  ipbro.ru mitorun.studio
+http://192.168.0.2:8080/
+cd ../promenadpodomam.ru  gamebeat.studio  startupcentre.ru  kirshmelev.ru  optimalist.su  sushi  plaksin.net  lunkov-psy.ru  ipbro.ru mitorun.studio  components
+
+Запускать плагины из папки проекта, пути в файле run-scripts.sh:
+npm start – запуск Eleventy
+npm build – запуск Eleventy без --serve
+npm run sl – запуск stylelint
+npm run ys – запуск yaspeller
+npm run w3c – запуск node-w3c-validator
+npm run hh – запуск htmlhint
+npm run bem – запуск bem-validate
+npm run sharp – запуск sharp сжатие jpg/png
+npm run webp – запуск sharp сжатие/конвертация? в webp
+npm run avif – запуск sharp сжатие/конвертация? в jpg/png
 
 npm start [запуск Eleventy: npx @11ty/eleventy --serve --quiet]
 npx stylelint "mitorun.studio/src/**/*.css" --fix
@@ -13,8 +25,9 @@ npx bem-validate mitorun.studio/site/index.html
 cat gang-of-three.ttf | ttf2woff2 > gang-of-three.woff2
 node sharp
 
-npm install --save-dev @11ty/eleventy html-minifier-terser @11ty/eleventy-plugin-bundle @11ty/eleventy-navigation @11tyrocks/eleventy-plugin-lightningcss typograf esbuild
+npm install --save-dev @11ty/eleventy html-minifier-terser @11ty/eleventy-plugin-bundle @11ty/eleventy-navigation @11tyrocks/eleventy-plugin-lightningcss typograf esbuild markdown-it
 
+@media (width >= 576px) (440px <= width < 768px) {}
 @media (min-width: 576px) and (max-width: 767.98px) { ... }
 <img loading="lazy" fetchpriority="high" width="300" height="150" src="https://picsum.photos/300/150?random=1" alt="" onerror="this.onerror=null; this.src='/img/thumb.jpg'">
 <a class="link" target="_blank" rel="noopener" href="https://example.com/"></a>
@@ -59,23 +72,58 @@ npm install --save-dev @11ty/eleventy html-minifier-terser @11ty/eleventy-plugin
 (’) апостроф (второй вариант) для слов в YAML U+2019
 (<>) кавычки меньше-больше &lt; tag &gt;
 
-https://picsum.photos/seed/picsum/300/200 - не меняющаяся фотка
-https://picsum.photos/300/200?grayscale - черно-белая фотка
-https://picsum.photos/300/200/?blur=2 - размытая фотка
-https://picsum.photos/300/200.webp - определенный формат файла
-https://picsum.photos/300/200?random=1
-https://picsum.photos/300/200?random=2 - различающиеся фотки
+https://loremflickr.com/600/400
+https://loremflickr.com/600/400/girl
+https://loremflickr.com/600/400?random=1 – различающиеся фотки
 
 https://mitorun.studio/web/grid/#:~:text=Ссылка на текст сайта
-Поиск по сайту: config site:11ty.dev
+config site:11ty.dev – поиск по сайту
 
 https://realfavicongenerator.net/
 
 /*------------------------------------------------
----------- Страница Портфолио: -------------------
+--- Страница Блог /blog/: ------------------------
 ------------------------------------------------*/
 
 БЭМ:
 class="form | form-2" – Блоки.
 class="form__title | form-2__label-primary" – Элементы.
 class="form__title--small | form-2__label-primary--alert" – Модификаторы.
+
+Продвинутый поиск, операторы в запросе:
+поиск по сайту site:mitorun.studio lang:ru date:>20181010 mime:pdf
+!слово-в-заданной-форме
++обязательное-слово
+"точная последовательность и форма слов"
+https://www.google.ru/advanced_search
+
+/*------------------------------------------------
+----- Служебные классы скриптов бутстрапа: -------
+------------------------------------------------*/
+
+/* Это скрывает раскрывающийся контент когда нет класса .show: */
+
+.collapse:not(.show) {
+	display: none;
+}
+
+/* Этот класс добавляется скриптом бутстрапа ВО ВРЕМЯ АНИМАЦИИ, для раскрывающегося по высоте (вертикально) контента: */
+
+.collapsing {
+	height: 0;
+	overflow: hidden;
+	transition: height 0.35s ease;
+
+	/* Стили если раскрытие происходит горизонтально (.collapse-horizontal):
+	width: 0;
+	height: auto;
+	transition: width 0.35s ease;*/
+}
+
+.fade {
+	transition: opacity 0.2s linear;
+}
+
+.fade:not(.show) {
+	opacity: 0;
+}

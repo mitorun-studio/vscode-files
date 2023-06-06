@@ -19,7 +19,6 @@
 	"editor.autoClosingBrackets": "beforeWhitespace",
 	"editor.autoSurround": "never",
 	"editor.bracketPairColorization.enabled": false,
-	"editor.comments.insertSpace": false,
 	"editor.fastScrollSensitivity": 10,
 	"editor.glyphMargin": false,
 	"editor.padding.top": 10,
@@ -107,8 +106,20 @@
 	},
 	"emmet.includeLanguages": {
 		"njk": "html",
-		"nunjucks": "html"
+		"nunjucks": "html",
+		"md": "html",
+		"markdown": "html"
 	},
+	"emmet.excludeLanguages": [],
+	"emmet.triggerExpansionOnTab": true,
+	"emmet.showSuggestionsAsSnippets": true,
+	//"emmet.showExpandedAbbreviation": "never",
+
+	"[markdown]": {
+		"editor.wordWrap": "on",
+	},
+
+
 	/* Ниже настройка цветов оболочки VS Code: */
 	"workbench.colorCustomizations": {
 		/* Основные свойства: */
@@ -293,9 +304,13 @@
 	"less.hover.documentation": false,
 	"livePreview.notifyOnOpenLooseFile": false,
 	"editor.accessibilitySupport": "off",
-	"workbench.activityBar.visible": false,
 	"cssrem.autoRemovePrefixZero": false,
 	"cssrem.currentLine": "disabled",
 	"editor.defaultColorDecorators": true,
 	"cSpell.language": "en,ru",
+	"terminal.integrated.defaultProfile.windows": "Git Bash",
+	"markdown.preview.breaks": true,
+	"git.autofetch": true,
+	"git.enableSmartCommit": true,
+	"git.confirmSync": false,
 }
