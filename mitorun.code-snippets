@@ -184,7 +184,7 @@
 		"prefix": "section",
 		"body": [
 			"<!-- Раздел: -->",
-			"<section class=\"container\">",
+			"<section class=\"container section\">",
 			"",
 			"\t<h2 class=\"h2\"></h2>",
 			"",
@@ -246,7 +246,7 @@
 		"prefix": "com",
 		"body": [
 			"<!------------------------------------------------",
-			"---------- Шаблон заголовка: ---------------------",
+			"--- Шаблон заголовка: ----------------------------",
 			"------------------------------------------------->",
 		],
 	},
@@ -727,6 +727,16 @@
 	},
 
 
+	"margin minus": {
+		"scope": "css,sass,scss",
+		"prefix": "mm",
+		"body": [
+			"margin-left: calc(-1 * var(--container-padding));",
+			"margin-right: calc(-1 * var(--container-padding));",
+		],
+	},
+
+
 	"line-height": {
 		"scope": "css,sass,scss",
 		"prefix": "lh",
@@ -852,6 +862,20 @@
 	},
 
 
+	"Все стандартные свойства img": {
+		"scope": "css,sass,scss",
+		"prefix": "img",
+		"body": [
+			"display: block;",
+			"max-width: 100%;",
+			"height: auto;",
+			"aspect-ratio: 3/2;",
+			"object-fit: contain;",
+			"object-position: left center;",
+		],
+	},
+
+
 	"grid-template-columns": {
 		"scope": "css,sass,scss",
 		"prefix": "gtc",
@@ -865,7 +889,7 @@
 		"scope": "css,sass,scss",
 		"prefix": "gtcr",
 		"body": [
-			"grid-template-columns: repeat(auto-fit, minmax(292px, 1fr));$0",
+			"grid-template-columns: repeat(auto-fill, minmax(292px, 1fr));$0",
 		],
 	},
 
@@ -1155,7 +1179,7 @@
 		"prefix": "com",
 		"body": [
 			"/*------------------------------------------------",
-			"---------- Страница Блог: ------------------------",
+			"--- Страница Блог /blog/: ------------------------",
 			"------------------------------------------------*/",
 		],
 	},
