@@ -7,7 +7,7 @@
 	//----------------------------------------------------
 
 	"Класс": {
-		"scope": "html,njk,nunjucks,md,markdown",
+		"scope": "html,njk,nunjucks,md,markdown,yaml",
 		"prefix": "c",
 		"body": [
 			"class=\"$1\"",
@@ -16,7 +16,7 @@
 
 
 	"Ссылка для телефона": {
-		"scope": "html,njk,nunjucks,md,markdown",
+		"scope": "html,njk,nunjucks,md,markdown,yaml",
 		"prefix": "at",
 		"body": [
 			"<a class=\"link\" href=\"tel:+71234567890\">+7${1:1234567890}</a>$0",
@@ -25,7 +25,7 @@
 
 
 	"Ссылка для почты": {
-		"scope": "html,njk,nunjucks,md,markdown",
+		"scope": "html,njk,nunjucks,md,markdown,yaml",
 		"prefix": "am",
 		"body": [
 			"<a class=\"link\" href=\"mailto:$1\">${1:hi@example.com}</a>$0",
@@ -34,7 +34,7 @@
 
 
 	"Ссылка полная": {
-		"scope": "html,njk,nunjucks,md,markdown",
+		"scope": "html,njk,nunjucks,md,markdown,yaml",
 		"prefix": "ax",
 		"body": [
 			"<a class=\"link\" target=\"_blank\" rel=\"noopener\" href=\"https://example.com/\">$1</a>$0",
@@ -43,7 +43,7 @@
 
 
 	"Картинка базовая": {
-		"scope": "html,njk,nunjucks,md,markdown",
+		"scope": "html,njk,nunjucks,md,markdown,yaml",
 		"prefix": "img",
 		"body": [
 			"<img width=\"300\" height=\"150\" src=\"/img/example.jpg\" alt=\"\">",
@@ -52,7 +52,7 @@
 
 
 	"Картинка полная": {
-		"scope": "html,njk,nunjucks,md,markdown",
+		"scope": "html,njk,nunjucks,md,markdown,yaml",
 		"prefix": "imgx",
 		"body": [
 			"<img loading=\"lazy\" fetchpriority=\"high\" width=\"300\" height=\"150\" src=\"/img/example.jpg\" alt=\"\">",
@@ -61,7 +61,7 @@
 
 
 	"picture базовая": {
-		"scope": "html,njk,nunjucks,md,markdown",
+		"scope": "html,njk,nunjucks,md,markdown,yaml",
 		"prefix": "pic",
 		"body": [
 			"<picture class=\"blog-card-img\">",
@@ -74,7 +74,7 @@
 
 
 	"SVG спрайт в HTML": {
-		"scope": "html,njk,nunjucks,md,markdown",
+		"scope": "html,njk,nunjucks,md,markdown,yaml",
 		"prefix": "svgu",
 		"body": [
 			"<svg aria-hidden=\"true\">",
@@ -107,7 +107,7 @@
 
 
 	"div на всю высоту": {
-		"scope": "html,njk,nunjucks,md,markdown",
+		"scope": "html,njk,nunjucks,md,markdown,yaml",
 		"prefix": "divx",
 		"body": [
 			"<div style=\"height: 100vh;\"></div>",
@@ -116,7 +116,7 @@
 
 
 	"meta-тег robots-none": {
-		"scope": "html,njk,nunjucks,md,markdown",
+		"scope": "html,njk,nunjucks,md,markdown,yaml",
 		"prefix": "noindex",
 		"body": [
 			"<meta name=\"robots\" content=\"noindex, nofollow\">",
@@ -125,7 +125,7 @@
 
 
 	"meta-тег link-preload": {
-		"scope": "html,njk,nunjucks,md,markdown",
+		"scope": "html,njk,nunjucks,md,markdown,yaml",
 		"prefix": "preload",
 		"body": [
 			"<link rel=\"preload\" as=\"image | font\" href=\"img/sprite.svg\">",
@@ -134,7 +134,7 @@
 
 
 	"video": {
-		"scope": "html,njk,nunjucks,md,markdown",
+		"scope": "html,njk,nunjucks,md,markdown,yaml",
 		"prefix": "video",
 		"body": [
 			"<video src=\"/fls/video.webm\" width=\"300\" controls></video>",
@@ -143,7 +143,7 @@
 
 
 	"video полное": {
-		"scope": "html,njk,nunjucks,md,markdown",
+		"scope": "html,njk,nunjucks,md,markdown,yaml",
 		"prefix": "videox",
 		"body": [
 			"<video poster=\"/img/fls/video.jpg\" controls width=\"250\" height=\"auto\" autoplay muted loop>",
@@ -156,7 +156,7 @@
 
 
 	"Таблица базовая": {
-		"scope": "html,njk,nunjucks,md,markdown",
+		"scope": "html,njk,nunjucks,md,markdown,yaml",
 		"prefix": "tbl",
 		"body": [
 			"<table class=\"table\">",
@@ -171,7 +171,7 @@
 
 
 	"Codefield": {
-		"scope": "html,njk,nunjucks,md,markdown",
+		"scope": "html,njk,nunjucks,md,markdown,yaml",
 		"prefix": "codefield",
 		"body": [
 			"<pre class=\"codefield language-html\"><code class=\"codefield__code\"></code></pre>",
@@ -180,7 +180,7 @@
 
 
 	"Заготовка под раздел": {
-		"scope": "html,njk,nunjucks,md,markdown",
+		"scope": "html,njk,nunjucks,md,markdown,yaml",
 		"prefix": "section",
 		"body": [
 			"<!-- Раздел: -->",
@@ -194,7 +194,7 @@
 
 
 	"Email: Таблица базовая": {
-		"scope": "html,njk,nunjucks,md,markdown",
+		"scope": "html,njk,nunjucks,md,markdown,yaml",
 		"prefix": "emailtable",
 		"body": [
 			"<table align=\"center\" border=\"0\" cellspacing=\"0\" cellpadding=\"0\" role=\"presentation\" style=\"width: 100%; max-width: 600px; Margin: 0; padding: 0; font-family: 'Poppins', sans-serif, Arial, Helvetica; color: #000000; background-color: #ffffff;\">",
@@ -210,7 +210,7 @@
 
 
 	"Email: Кнопка": {
-		"scope": "html,njk,nunjucks,md,markdown",
+		"scope": "html,njk,nunjucks,md,markdown,yaml",
 		"prefix": "emailbutton",
 		"body": [
 			"<table align=\"center\" border=\"0\" cellspacing=\"0\" cellpadding=\"0\" role=\"presentation\">",
@@ -226,7 +226,7 @@
 
 
 	"Метатеги OpenGraph": {
-		"scope": "html,njk,nunjucks,md,markdown",
+		"scope": "html,njk,nunjucks,md,markdown,yaml",
 		"prefix": "og",
 		"body": [
 			"<meta property=\"og:type\" content=\"website\">",
@@ -242,7 +242,7 @@
 
 
 	"Заголовок раздела комментарием HTML": {
-		"scope": "html,njk,nunjucks,md,markdown",
+		"scope": "html,njk,nunjucks,md,markdown,yaml",
 		"prefix": "com",
 		"body": [
 			"<!------------------------------------------------",
@@ -253,7 +253,7 @@
 
 
 "Markdown ссылка": {
-	"scope": "html,njk,nunjucks,md,markdown",
+	"scope": "html,njk,nunjucks,md,markdown,yaml",
 	"prefix": "mda",
 	"body": [
 		"[ссылка](https://example.com)",
@@ -262,7 +262,7 @@
 
 
 	"Markdown картинка": {
-		"scope": "html,njk,nunjucks,md,markdown",
+		"scope": "html,njk,nunjucks,md,markdown,yaml",
 		"prefix": "mdimg",
 		"body": [
 			"![alt картинки](/img/example.jpg)",
@@ -271,7 +271,7 @@
 
 
 	"Markdown цитата blockquote": {
-		"scope": "html,njk,nunjucks,md,markdown",
+		"scope": "html,njk,nunjucks,md,markdown,yaml",
 		"prefix": "mdcite",
 		"body": [
 			"> Блок с цитатой.",
@@ -280,7 +280,7 @@
 
 
 	"Markdown блок с кодом": {
-		"scope": "html,njk,nunjucks,md,markdown",
+		"scope": "html,njk,nunjucks,md,markdown,yaml",
 		"prefix": "mdcode",
 		"body": [
 			"```css",
@@ -293,7 +293,7 @@
 
 
 	"Markdown таблица": {
-		"scope": "html,njk,nunjucks,md,markdown",
+		"scope": "html,njk,nunjucks,md,markdown,yaml",
 		"prefix": "mdtable",
 		"body": [
 			"| Номер | Продукт | Количество |",
@@ -311,7 +311,7 @@
 	//----------------------------------------------------
 
 	"Хлебные крошки breadcrumb HTML": {
-		"scope": "html,njk,nunjucks,md,markdown",
+		"scope": "html,njk,nunjucks,md,markdown,yaml",
 		"prefix": "breadcrumb",
 		"body": [
 			"<ol class=\"breadcrumb\" aria-label=\"breadcrumb\">",
@@ -324,7 +324,7 @@
 
 
 	"social": {
-		"scope": "html,njk,nunjucks,md,markdown",
+		"scope": "html,njk,nunjucks,md,markdown,yaml",
 		"prefix": "social",
 		"body": [
 			"<ul class=\"social\">",
@@ -339,7 +339,7 @@
 
 
 	"HTML страница базовая": {
-		"scope": "html,njk,nunjucks,md,markdown",
+		"scope": "html,njk,nunjucks,md,markdown,yaml",
 		"prefix": "html",
 		"body": [
 			"<!doctype html><!-- Сайт https://example.com/ -->",
@@ -370,7 +370,7 @@
 
 
 	"HTML страница полная": {
-		"scope": "html,njk,nunjucks,md,markdown",
+		"scope": "html,njk,nunjucks,md,markdown,yaml",
 		"prefix": "htmlx",
 		"body": [
 			"<!doctype html><!-- Сайт https://example.com/ -->",
@@ -433,7 +433,7 @@
 	//----------------------------------------------------
 
 	"Eleventy Variable": {
-		"scope": "html,njk,nunjucks,md,markdown",
+		"scope": "html,njk,nunjucks,md,markdown,yaml",
 		"prefix": "11",
 		"body": [
 			"{{ _site.siteUrl + page.url }}",
@@ -442,7 +442,7 @@
 
 
 	"Eleventy Include": {
-		"scope": "html,njk,nunjucks,md,markdown",
+		"scope": "html,njk,nunjucks,md,markdown,yaml",
 		"prefix": "11include",
 		"body": [
 			"{% include \"${1:_header.njk}\" %}$0",
@@ -451,7 +451,7 @@
 
 
 	"Eleventy image Shortcut": {
-		"scope": "html,njk,nunjucks,md,markdown",
+		"scope": "html,njk,nunjucks,md,markdown,yaml",
 		"prefix": "11img",
 		"body": [
 			"{% image \"./src/img/$1\", \"$2\" %}$0",
@@ -460,7 +460,7 @@
 
 
 	"Eleventy background-image Shortcut": {
-		"scope": "html,njk,nunjucks,md,markdown",
+		"scope": "html,njk,nunjucks,md,markdown,yaml",
 		"prefix": "11bgimg",
 		"body": [
 			"{% bgimage \"./src/img/$1\" %}$0",
@@ -469,7 +469,7 @@
 
 
 	"Eleventy Front Matter": {
-		"scope": "html,njk,nunjucks,md,markdown",
+		"scope": "html,njk,nunjucks,md,markdown,yaml",
 		"prefix": "11fm",
 		"body": [
 			"---",
@@ -506,8 +506,19 @@
 	},
 
 
+	"Eleventy False": {
+		"scope": "html,njk,nunjucks,md,markdown,yaml",
+		"prefix": "11false",
+		"body": [
+			"eleventyExcludeFromCollections: true",
+			"permalink: false",
+			"layout: false",
+		],
+	},
+
+
 	"Eleventy extends": {
-		"scope": "html,njk,nunjucks,md,markdown",
+		"scope": "html,njk,nunjucks,md,markdown,yaml",
 		"prefix": "11extends",
 		"body": [
 			"{% extends \"_page-base.njk\" %}",
@@ -526,25 +537,25 @@
 
 
 	"Eleventy for (цикл Nunjucks)": {
-		"scope": "html,njk,nunjucks,md,markdown",
+		"scope": "html,njk,nunjucks,md,markdown,yaml",
 		"prefix": "11for",
 		"body": [
-			"{%- for blog in collections.all %}{%- endfor %}",
+			"{% for blog in collections.all %}{% endfor %}",
 		],
 	},
 
 
 	"Eleventy if (условие если?)": {
-		"scope": "html,njk,nunjucks,md,markdown",
+		"scope": "html,njk,nunjucks,md,markdown,yaml",
 		"prefix": "11if",
 		"body": [
-			"{%- if page.data.layout %}{%- endif %}",
+			"{% if page.data.layout %}{% else %}{% endif %}",
 		],
 	},
 
 
 	"Eleventy дата": {
-		"scope": "html,njk,nunjucks,md,markdown",
+		"scope": "html,njk,nunjucks,md,markdown,yaml",
 		"prefix": "11time",
 		"body": [
 			"<time datetime=\"{{ date.toISOString().slice(0, 10) }}\">{{ date | readableDate }}</time>",
@@ -553,24 +564,23 @@
 
 
 	"Eleventy список карточек блога": {
-		"scope": "html,njk,nunjucks,md,markdown",
-		"prefix": "11blog",
+		"scope": "html,njk,nunjucks,md,markdown,yaml",
+		"prefix": "11blog 11post",
 		"body": [
 			"<ul class=\"blog\">",
-			"\t<!--{% set blogHome = collections.blog | reverse %}",
-			"\t{% for blog in blogHome.slice(0, 3) %}-->",
-			"\t{% for blog in collections.blog | reverse %}",
+			"\t<!--{% for post in collections.blog.slice(0, 3) | reverse %}-->",
+			"\t{% for post in collections.blog | reverse %}",
 			"\t<li class=\"blog__card\">",
-			"\t\t<img class=\"blog__img\" src=\"/img/blog/{{ blog.page.fileSlug }}.jpg\" alt=\"Обложка статьи {{ blog.data.title }}\">",
+			"\t\t<img class=\"blog__img\" src=\"/img/blog/{{ post.page.fileSlug }}.jpg\" alt=\"Обложка статьи {{ post.data.title }}\">",
 			"",
-			"\t\t<h3 class=\"blog__title h3\">{{ blog.data.title }}</h3>",
+			"\t\t<h3 class=\"blog__title h3\">{{ post.data.title }}</h3>",
 			"",
-			"\t\t<p class=\"blog__tag\">{{ blog.data.blogTag }}</p>",
+			"\t\t<p class=\"blog__tag\">{{ post.data.blogTag }}</p>",
 			"",
 			"\t\t<div class=\"post__author\">",
-			"\t\t\t<time datetime=\"{{ date.toISOString().slice(0, 10) }}\">{{ blog.data.date | readableDate }}</time>",
+			"\t\t\t<time datetime=\"{{ date.toISOString().slice(0, 10) }}\">{{ post.data.date | readableDate }}</time>",
 			"",
-			"\t\t\t<address>{{ blog.data.author or 'Олег Миторун'}}</address>",
+			"\t\t\t<address>{{ post.data.author or 'Олег Миторун'}}</address>",
 			"\t\t</div>",
 			"\t</li>",
 			"\t{% endfor %}",

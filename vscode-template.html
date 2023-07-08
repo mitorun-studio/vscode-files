@@ -4,16 +4,16 @@ Ctrl Shift E – проводник и Найти-и-заменить
 Ctrl Shift G – управление GitHub
 
 http://192.168.0.2:8080/
-cd ../promenadpodomam.ru  gamebeat.studio  startupcentre.ru  kirshmelev.ru  optimalist.su  sushi  plaksin.net  lunkov-psy.ru  ipbro.ru mitorun.studio  components
+cd ../promenadpodomam.ru  gamebeat.studio  startupcentre.ru  kirshmelev.ru  optimalist.su  sushi  plaksin.net  lunkov-psy.ru  ipbro.ru  mitorun.studio  components  mitosite
 
 Запускать плагины из папки проекта, пути в файле run-scripts.sh:
 npm start – запуск Eleventy
 npm build – запуск Eleventy без --serve
 npm run sl – запуск stylelint
 npm run ys – запуск yaspeller
-npm run w3c – запуск node-w3c-validator
+npm run w3c – запуск node-w3c-validator (НЕ РАБОТАЕТ?!)
 npm run hh – запуск htmlhint
-npm run bem – запуск bem-validate
+npm run bem – запуск bem-validate (НЕ РАБОТАЕТ?!)
 npm run sharp – запуск sharp сжатие jpg/png
 npm run webp – запуск sharp сжатие/конвертация? в webp
 npm run avif – запуск sharp сжатие/конвертация? в jpg/png
@@ -29,7 +29,27 @@ npx bem-validate mitorun.studio/site/index.html
 cat gang-of-three.ttf | ttf2woff2 > gang-of-three.woff2
 node sharp
 
-npm install --save-dev @11ty/eleventy html-minifier-terser @11ty/eleventy-plugin-bundle @11ty/eleventy-navigation @11tyrocks/eleventy-plugin-lightningcss typograf esbuild markdown-it
+Установка сборки Eleventy:
+npm install --save-dev @11ty/eleventy html-minifier-terser @11ty/eleventy-plugin-bundle @11ty/eleventy-navigation @11tyrocks/eleventy-plugin-lightningcss esbuild markdown-it
+
+Установка плагинов:
+npm install --save-dev browser-sync htmlhint stylelint stylelint-color-format stylelint-declaration-block-no-ignored-properties stylelint-group-selectors stylelint-order yaspeller node-w3c-validator bem-validate html-validate sharp path typograf
+
+		"bem-validate": "^1.1.2",
+		"browser-sync": "^2.27.12",
+		"fs": "^0.0.1-security",
+		"html-validate": "^7.13.2",
+		"htmlhint": "^1.1.4",
+		"node-w3c-validator": "^2.0.2",
+		"path": "^0.12.7",
+		"sharp": "^0.32.0",
+		"stylelint": "^14.16.1",
+		"stylelint-color-format": "^1.1.0",
+		"stylelint-declaration-block-no-ignored-properties": "^2.7.0",
+		"stylelint-group-selectors": "^1.0.9",
+		"stylelint-order": "^6.0.2",
+		"typograf": "^7.1.0",
+		"yaspeller": "^8.0.1"
 
 @media (width >= 576px) (440px <= width < 768px) {}
 @media (min-width: 576px) and (max-width: 767.98px) { ... }
@@ -58,8 +78,6 @@ npm install --save-dev @11ty/eleventy html-minifier-terser @11ty/eleventy-plugin
 <u>текст</u> – Выделение текста подчёркиванием.
 <var>текст</var> – Переменная из программы.
 
-Это пример [ссылки](https://example.com) в тексте.
-![alt картинки](/img/image.png)
 
 – — $ € ₽ © ® ™ … × ÷ ± ≈ ≠ ° № ∞ § π µ Ø ¦ | ‾
 ← ↑ → ↓ ↖ ↗ ↘ ↙ ¶ ≡ ✕ ∟ ∧ ∨ • ○ ·
@@ -75,7 +93,7 @@ npm install --save-dev @11ty/eleventy html-minifier-terser @11ty/eleventy-plugin
 («») кавычки русские №1 ёлочки &laquo; и &raquo; | &#171; и &#187; | Alt 0171 и Alt 0187
 („“) кавычки русские №2 лапки &bdquo; и &ldquo; | Alt 0132 и Alt 0147
 (``) обратные(?) кавычки
-(’) апостроф (второй вариант) для слов в YAML U+2019
+(’) апостроф (второй вариант) для слов в YAML (типа Let’s) U+2019
 (<>) кавычки меньше-больше &lt; и &gt;
 
 

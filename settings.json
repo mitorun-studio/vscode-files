@@ -1,7 +1,7 @@
 {
 	// Файл настроек редактора VSCode.
 	// Место расположения файла: C:\Users\Mitorun\AppData\Roaming\Code\User\settings.json
-	"terminal.integrated.cwd": "C:/MITO-PC/SITES/CODE/startupcentre.ru",
+	"terminal.integrated.cwd": "C:/MITO-PC/SITES/CODE/mitorun.studio",
 	"files.autoSaveDelay": 1000,
 	"editor.fontSize": 22,
 	"terminal.integrated.fontSize": 18,
